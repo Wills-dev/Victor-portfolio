@@ -132,6 +132,26 @@ section {
             font-size: 1.2rem;
             color: var(--color-grey-2);
             pointer-events: none;
+            transition: all 1s ease-in-out;
+        }
+    }
+    .control-1 {
+        i {
+            transition: all 1s ease-in-out;
+        }
+        .home-name {
+            display: none;
+            transition: all 10s ease-in-out;
+        }
+        &:hover {
+            .home-name{
+                display: flex;
+                justify-content: center;
+                
+            }
+            i{
+                display: none;
+            }
         }
     }
 }
@@ -185,6 +205,38 @@ section {
             span{
                 color: var(--color-secondary);
                 font-size: 4rem;
+            }
+        }
+        p {
+            margin: 1.5rem 0;
+            line-height: 2rem;
+            font-size: 1rem;
+        }
+        .btn-ctn {
+            display: flex;
+            align-self: flex-start;
+            .main-btn{
+                border-radius: 30px;
+                color: inherit;
+                font-weight: 600;
+                position: relative;
+                border: .1rem solid var(--color-secondary);
+                align-self: flex-start;
+                display: flex;
+                align-items: center;
+                overflow: hidden;
+                .btn-text {
+                    padding: 0 1rem;
+                }
+                .btn-icon{
+                    background-color: var(--color-secondary);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    padding: .4rem;
+                    
+                }
             }
         }
     }
