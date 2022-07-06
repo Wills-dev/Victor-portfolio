@@ -2,7 +2,7 @@ const sections = document.querySelectorAll('.section');
 const sectBtns = document.querySelectorAll('.controls');
 const sectBtn = document.querySelectorAll('.control');
 const allSections = document.querySelectorAll('.main-container');
-
+const contactBtn = document.querySelectorAll('.contact-btn');
 function PageTransition(){
     // button click activation. the function below determines the page that should be displayed on click.
     // sectBtn is representing all the classname of the icon buttons.
@@ -19,6 +19,9 @@ function PageTransition(){
         })
     }
 
+    contactBtn.addEventListener('click', function(){
+        sections[4].className += ' active';
+    })
     // sections activation
     // allSections.addEventListener('click', (e) => {
     //     const id = e.target.dataset.id;

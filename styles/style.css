@@ -173,148 +173,6 @@ section {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-1 i {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-1 .home-name {
-  display: none;
-  -webkit-transition: all 10s ease-in-out;
-  transition: all 10s ease-in-out;
-}
-
-.controls .control-1:hover {
-  background-color: transparent;
-}
-
-.controls .control-1:hover .home-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.controls .control-1:hover i {
-  display: none;
-}
-
-.controls .control-2 i {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-2 .about-name {
-  display: none;
-  -webkit-transition: all 10s ease-in-out;
-  transition: all 10s ease-in-out;
-}
-
-.controls .control-2:hover {
-  background-color: transparent;
-}
-
-.controls .control-2:hover .about-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.controls .control-2:hover i {
-  display: none;
-}
-
-.controls .control-3 i {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-3 .portfolio-name {
-  display: none;
-  -webkit-transition: all 10s ease-in-out;
-  transition: all 10s ease-in-out;
-}
-
-.controls .control-3:hover {
-  background-color: transparent;
-}
-
-.controls .control-3:hover .portfolio-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.controls .control-3:hover i {
-  display: none;
-}
-
-.controls .control-4 i {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-4 .blog-name {
-  display: none;
-  -webkit-transition: all 10s ease-in-out;
-  transition: all 10s ease-in-out;
-}
-
-.controls .control-4:hover {
-  background-color: transparent;
-}
-
-.controls .control-4:hover .blog-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.controls .control-4:hover i {
-  display: none;
-}
-
-.controls .control-5 i {
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-5 .contact-name {
-  display: none;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-}
-
-.controls .control-5:hover {
-  background-color: transparent;
-}
-
-.controls .control-5:hover .contact-name {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.controls .control-5:hover i {
-  display: none;
 }
 
 .header-content {
@@ -408,8 +266,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .header-content .right-header .btn-ctn .main-btn {
@@ -436,7 +295,6 @@ section {
 }
 
 .header-content .right-header .btn-ctn .main-btn .btn-icon {
-  background-color: var(--color-secondary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -451,6 +309,49 @@ section {
 }
 
 .header-content .right-header .btn-ctn .main-btn:hover {
+  background-color: var(--color-secondary);
+}
+
+.header-content .right-header .btn-ctn .contact-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 0.1rem solid var(--color-secondary);
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.header-content .right-header .btn-ctn .contact-btn .contact-text {
+  padding: 0 1rem;
+}
+
+.header-content .right-header .btn-ctn .contact-btn .contact-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  padding: .4rem;
+}
+
+.header-content .right-header .btn-ctn .contact-btn:hover {
   background-color: var(--color-secondary);
 }
 /*# sourceMappingURL=style.css.map */
