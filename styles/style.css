@@ -153,7 +153,7 @@ section {
 .controls .control {
   padding: 1.5rem;
   cursor: pointer;
-  background-color: var(--color-grey-4);
+  background-color: var(--color-grey-5);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
