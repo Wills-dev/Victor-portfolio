@@ -19,13 +19,18 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.2)
+    // font-family: 'Crimson Text', serif;
+    // font-family: 'Pacifico', cursive;
+    // font-family: 'Poppins', sans-serif;
+    // font-family: 'Montserrat', sans-serif;
 }   
 
 body{
-    // background-color: aqua;
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--color-secondary);
+    // font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
-    color: var(--color-white);
+    color: var(--color-grey-2);
     transition: all .4s ease-in-out;
 }
 
@@ -36,10 +41,19 @@ a {
     font-family: inherit;
 }
 
+// social navigation starts
+.social-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-black);
+    font-size: 4rem;
+    
+}
+
 // sections transition starts here
 header {
     height: 100vh;
-    color: var(--color-white);
+    color: var(--color-grey-2);
     overflow: hidden;
 }
 
@@ -100,6 +114,15 @@ section {
     }
 }
 // sections transition ends here
+// .social-container {
+//     position: fixed;
+//     z-index: 10;
+//     left: 3%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-around;
+// }
 // controls for navigations start here
 .controls {
     position: fixed;
@@ -130,7 +153,7 @@ section {
         margin: .7rem 0;
         box-shadow: var(--box-shadow-1);
         position: relative;
-        transition: all .2s ease-in-out;
+        transition: all .5s ease-in-out;
         i {
             font-size: 1.2rem;
             color: var(--color-grey-2);
@@ -139,6 +162,7 @@ section {
         }
         &:hover{
             background-color: transparent !important;
+            // transition: all 4s ease-in-out !important;
             i{
                 opacity: 0;
             }
@@ -157,12 +181,12 @@ section {
                 opacity: 0;
                 transition: all .4s ease-in-out;
             }
+            
 
             &:first-child  {
                 &::after {
                     content: 'HOME';
                     opacity: 1;
-                    
                 }
             }
             &:nth-child(2) {
@@ -188,6 +212,7 @@ section {
                 &::after {
                     content: 'CONTACT';
                     opacity: 1;
+                    margin-right: .4rem;
                 }
             }
         }
@@ -239,77 +264,149 @@ section {
         flex-direction: column;
         justify-content: center;
         padding-right: 13rem;
+        .welcome-text {
+            font-size: 5rem;
+            letter-spacing: 1px;
+            font-weight: 100;
+            margin-bottom: 2rem;
+        }
         .name{
-            font-size: 2rem;
+            font-size: 1.5rem;
             span{
                 color: var(--color-secondary);
-                font-size: 4rem;
+                font-size: 1.5rem;
             }
         }
         p {
-            margin: 1.5rem 0;
+            margin: 1rem 0;
             line-height: 2rem;
             font-size: 1rem;
         }
-        .btn-ctn {
-            display: flex;
-            justify-content: flex-start;
-            
+        
+    }
+}
+.btn-ctn {
+    display: flex;
+    justify-content: flex-start;
+    
 
-            .main-btn{
-                border-radius: 30px;
-                color: inherit;
-                font-weight: 600;
-                position: relative;
-                border: .1rem solid var(--color-secondary);
-                align-self: flex-start;
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                transition: all .6s ease-in-out;
-                .btn-text {
-                    padding: 0 1rem;
-                }
-                .btn-icon{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    padding: .4rem;
-                    
-                }
-                &:hover {
-                    background-color: var(--color-secondary);
-                }
-            }
-            .contact-btn{
-                border-radius: 30px;
-                color: inherit;
-                font-weight: 600;
-                position: relative;
-                border: .1rem solid var(--color-secondary);
-                align-self: flex-start;
-                margin-left: 1rem;
-                display: flex;
-                align-items: center;
-                overflow: hidden;
-                transition: all .6s ease-in-out;
-                .contact-text {
-                    padding: 0 1rem;
-                }
-                .contact-icon{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    padding: .4rem;
-                    
-                }
-                &:hover {
-                    background-color: var(--color-secondary);
-                }
-            }
+    .main-btn{
+        border-radius: 30px;
+        color: inherit;
+        font-weight: 600;
+        position: relative;
+        border: .1rem solid var(--color-secondary);
+        align-self: flex-start;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transition: all .6s ease-in-out;
+        .btn-text {
+            padding: 0 1rem;
+        }
+        .btn-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: .4rem;
+            
+        }
+        &:hover {
+            background-color: var(--color-secondary);
+        }
+    }
+    .contact-btn{
+        border-radius: 30px;
+        color: inherit;
+        font-weight: 600;
+        position: relative;
+        border: .1rem solid var(--color-secondary);
+        align-self: flex-start;
+        margin-left: 1rem;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        transition: all .6s ease-in-out;
+        .contact-text {
+            padding: 0 1rem;
+        }
+        .contact-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            padding: .4rem;
+            
+        }
+        &:hover {
+            background-color: var(--color-secondary);
         }
     }
 }
+// header content ends here
+// about content start
+.main-title {
+    text-align: center;
+    h2{
+        position: relative;
+        text-transform: uppercase;
+        font-size: 3rem;
+        font-weight: 700;
+        font-family: 'Crimson Text', serif;
+        span{
+            color: var(--color-secondary);
+        }
+        
+    }
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     display: block;
+    //     width: 14rem;
+    //     height: .1rem;
+    //     right: 50%;
+    //     transform: translateX(50%);
+    //     background-color: var(--color-secondary);
+    // }
+}
 
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: .8px solid var(--color-grey-5);
+   .main-about {
+        .bg-text {
+            position: absolute;
+            text-transform: uppercase;
+            font-size: 6rem !important;
+            opacity: .2;
+            top: 50%;
+            left: 50%;
+            color: var(--color-secondary);
+            transition: all 4s ease-in-out;
+            z-index: -1;
+            transform: translate(-50%, -50%);
+            font-weight: 800;
+            font-size: 4.5rem;
+        }
+       
+        p {
+            a{
+                color: var(--color-secondary);
+                font-weight: 800;
+            }
+            margin-bottom: 1rem;
+        }
+        
+        .conect-ctn {
+            color: var(--color-secondary);
+            font-family: 'Crimson Text', serif;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+   }
+}
