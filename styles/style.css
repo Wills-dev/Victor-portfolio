@@ -38,13 +38,12 @@ a {
 
 .logo-ctn {
   display: block;
-  font-family: "Pacifico", cursive;
+  font-family: "Montserrat", sans-serif;
   font-style: italic;
   font-size: 2rem;
   color: var(--color-secondary);
   margin-top: 1rem;
   padding-left: 2rem;
-  background-color: var(--color-black);
   position: fixed;
   z-index: 10;
   opacity: 0.5;
@@ -53,14 +52,13 @@ a {
 .social-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--color-black);
   justify-content: space-around;
   align-items: center;
   position: fixed;
   z-index: 10;
   align-items: center;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 60%;
+  transform: translateY(-10%);
 }
 .social-container .social-main-container {
   display: flex;
@@ -76,6 +74,13 @@ a {
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+}
+.social-container .social-main-container .empty-line {
+  height: 3rem;
+  width: 0.1rem;
+  background-color: var(--color-grey-5);
+  display: block;
+  left: 50%;
 }
 
 header {
