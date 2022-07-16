@@ -40,13 +40,49 @@ a {
     color: inherit;
     font-family: inherit;
 }
-
+// logo start
+.logo-ctn {
+    display: block;
+    font-family:'Pacifico', cursive ;
+    font-style: italic;
+    font-size: 2rem;
+    color: var(--color-secondary);
+    margin-top: 1rem;
+    padding-left: 2rem;
+    background-color: var(--color-black);
+    position: fixed;
+    z-index: 10;
+    opacity: .5;
+    
+}
+// logo end
 // social navigation starts
 .social-container {
     display: flex;
     flex-direction: column;
     background-color: var(--color-black);
-    font-size: 4rem;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    align-items: center;
+    top:50% ;
+    transform: translateY(-50%);
+    .social-main-container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+        a {
+            margin: .5rem 1rem;
+            border: .1rem solid var(--color-grey-3);
+            padding: .3rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+    }
     
 }
 
@@ -114,15 +150,7 @@ section {
     }
 }
 // sections transition ends here
-// .social-container {
-//     position: fixed;
-//     z-index: 10;
-//     left: 3%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: space-around;
-// }
+
 // controls for navigations start here
 .controls {
     position: fixed;
@@ -242,9 +270,9 @@ section {
         }
         .image {
             border-radius: 25%;
-            height: 90%;
+            height: 70%;
             width: 65%;
-            margin-left: 4rem;
+            margin-left: 6rem;
             background-color: var(--color-black);
             transition: all .4s ease-in-out;
             img {

@@ -36,11 +36,46 @@ a {
   font-family: inherit;
 }
 
+.logo-ctn {
+  display: block;
+  font-family: "Pacifico", cursive;
+  font-style: italic;
+  font-size: 2rem;
+  color: var(--color-secondary);
+  margin-top: 1rem;
+  padding-left: 2rem;
+  background-color: var(--color-black);
+  position: fixed;
+  z-index: 10;
+  opacity: 0.5;
+}
+
 .social-container {
   display: flex;
   flex-direction: column;
   background-color: var(--color-black);
-  font-size: 4rem;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 10;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.social-container .social-main-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+.social-container .social-main-container a {
+  margin: 0.5rem 1rem;
+  border: 0.1rem solid var(--color-grey-3);
+  padding: 0.3rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
 }
 
 header {
@@ -216,9 +251,9 @@ section {
 }
 .header-content .left-header .image {
   border-radius: 25%;
-  height: 90%;
+  height: 70%;
   width: 65%;
-  margin-left: 4rem;
+  margin-left: 6rem;
   background-color: var(--color-black);
   transition: all 0.4s ease-in-out;
 }
