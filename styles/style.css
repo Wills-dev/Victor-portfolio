@@ -17,8 +17,8 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
-  --box-shadow-1: 0 3px 15px rgba(0,0,0,.2)
-  // font-family: "Crimson Text", serif;
+  --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
+  --box-shadow-2: 0 5px 15px rgba(0,0,0,.6);
 }
 
 body {
@@ -42,7 +42,7 @@ a {
   font-weight: bold;
   text-transform: capitalize;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 2.5rem;
   letter-spacing: 0.2rem;
   color: var(--color-secondary);
   margin-top: 1rem;
@@ -89,13 +89,13 @@ a {
   transform: rotateZ(360deg);
 }
 .social-container .social-main-container .empty-line {
-  height: 10rem;
+  height: 20rem;
   width: 0.1rem;
   background-color: var(--color-secondary);
   display: block;
   left: 50%;
   top: 100%;
-  transform: translateY(-5%);
+  transform: translateY(-2.5%);
   position: absolute;
   opacity: 0.7;
 }
@@ -210,6 +210,7 @@ section {
   font-size: 1rem;
   font-family: "Alegreya Sans", sans-serif;
   font-weight: bold;
+  letter-spacing: 0.1rem;
   color: #08b0a8;
   position: absolute;
   bottom: 50%;
@@ -235,7 +236,7 @@ section {
   opacity: 1;
 }
 .controls .control:hover:nth-child(3)::after {
-  content: "PORTFOLIO";
+  content: "PROJECTS";
   opacity: 1;
 }
 .controls .control:hover:nth-child(4)::after {
@@ -279,7 +280,7 @@ section {
 }
 .header-content .left-header .image img {
   width: 100%;
-  height: 100%;
+  height: 95%;
   -o-object-fit: cover;
      object-fit: cover;
   transition: all 0.4s ease-in-out;
@@ -448,4 +449,61 @@ section {
   transform: translate(-50%, -50%);
   font-weight: 800;
   font-size: 4.5rem;
+}
+
+.portfolios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.portfolios .portfolio-item {
+  position: relative;
+}
+.portfolios .portfolio-item img {
+  width: 100%;
+  height: 18rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 1.5rem;
+}
+.portfolios .portfolio-item .hover-item {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(18, 24, 27, 0.9);
+  transform: scale(0);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.portfolios .portfolio-item .hover-item h3 {
+  font-size: 1.5rem;
+  color: var(--color-white);
+  margin-bottom: 1.5rem;
+}
+.portfolios .portfolio-item .hover-item .icons {
+  background-color: rgb(3, 58, 54);
+  padding: 0.5rem;
+  box-shadow: var(--box-shadow-2);
+  border-radius: 0.4rem;
+  font-size: 0.8rem;
+  transition: all 0.4s ease-in-out;
+}
+.portfolios .portfolio-item .hover-item .icons a span {
+  padding-right: 0.2rem;
+}
+.portfolios .portfolio-item .hover-item .icons:hover {
+  background-color: #106864;
+}
+.portfolios .portfolio-item:hover .hover-item {
+  opacity: 1;
+  transform: scale(1);
 }/*# sourceMappingURL=style.css.map */
