@@ -78,6 +78,7 @@ a {
             margin: .5rem 1rem;
             border: .1rem solid var(--color-secondary);
             color: var(--color-secondary);
+            background-color: var(--color-grey-6);
             padding: .3rem;
             border-radius: 50%;
             display: flex;
@@ -85,7 +86,7 @@ a {
             justify-content: center;
             font-size: 1rem;
             opacity: .7;
-            transition: all .4s ease-in-out;
+            transition: all .5s ease-in-out;
             &:hover{
                 opacity: 1;
                 color: var(--color-grey-2);
@@ -288,7 +289,7 @@ section {
             clip-path: polygon(0 100%, 0 95%, 100% 100%);
         }
         .image {
-            border-radius: 2rem;
+            border-radius: 50%;
             height: 75%;
             width: 70%;
             margin-left: 6rem;
@@ -443,22 +444,8 @@ section {
     padding-top: 2.5rem;
     padding-bottom: 2rem;
     border-bottom: .8px solid var(--color-grey-5);
+    position: relative;
    .main-about {
-        .bg-text {
-            position: absolute;
-            text-transform: uppercase;
-            font-size: 6rem !important;
-            opacity: .2;
-            top: 50%;
-            left: 50%;
-            color: var(--color-secondary);
-            transition: all 4s ease-in-out;
-            z-index: -1;
-            transform: translate(-50%, -50%);
-            font-weight: 800;
-            font-size: 4.5rem;
-        }
-       
         p {
             a{
                 font-family: 'Alegreya Sans', sans-serif;
@@ -480,3 +467,19 @@ section {
         }
    }
 }
+.bg-text {
+    position: absolute;
+    text-transform: uppercase;
+    font-size: 6rem !important;
+    opacity: .2;
+    top: 50%;
+    left: 50%;
+    color: var(--color-secondary);
+    transition: all 4s ease-in-out;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    font-size: 4.5rem;
+}
+// about ends here
+// portfolio starts
