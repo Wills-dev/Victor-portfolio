@@ -38,15 +38,19 @@ a {
 
 .logo-ctn {
   display: block;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lobster Two", cursive;
+  font-weight: bold;
+  text-transform: capitalize;
   font-style: italic;
   font-size: 2rem;
+  letter-spacing: 0.2rem;
   color: var(--color-secondary);
   margin-top: 1rem;
   padding-left: 2rem;
   position: fixed;
   z-index: 10;
-  opacity: 0.5;
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .social-container {
@@ -67,20 +71,32 @@ a {
 }
 .social-container .social-main-container a {
   margin: 0.5rem 1rem;
-  border: 0.1rem solid var(--color-grey-3);
+  border: 0.1rem solid var(--color-secondary);
+  color: var(--color-secondary);
   padding: 0.3rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1rem;
+  opacity: 0.7;
+  transition: all 0.4s ease-in-out;
+}
+.social-container .social-main-container a:hover {
+  opacity: 1;
+  color: var(--color-grey-2);
+  transform: rotateZ(360deg);
 }
 .social-container .social-main-container .empty-line {
-  height: 3rem;
+  height: 10rem;
   width: 0.1rem;
-  background-color: var(--color-grey-5);
+  background-color: var(--color-secondary);
   display: block;
   left: 50%;
+  top: 100%;
+  transform: translateY(-5%);
+  position: absolute;
+  opacity: 0.7;
 }
 
 header {
@@ -180,26 +196,20 @@ section {
   margin: 0.7rem 0;
   box-shadow: var(--box-shadow-1);
   position: relative;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .controls .control i {
   font-size: 1.2rem;
   color: var(--color-grey-2);
   pointer-events: none;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-.controls .control:hover {
-  background-color: transparent !important;
-}
-.controls .control:hover i {
-  opacity: 0;
-}
-.controls .control:hover::after {
+.controls .control::after {
   content: "";
-  font-size: 0.8rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
   color: #08b0a8;
-  letter-spacing: 0.1rem;
   position: absolute;
   bottom: 50%;
   transform: translateY(50%);
@@ -207,7 +217,13 @@ section {
   width: 100%;
   text-align: center;
   opacity: 0;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+.controls .control:hover {
+  background-color: transparent !important;
+}
+.controls .control:hover i {
+  opacity: 0;
 }
 .controls .control:hover:first-child::after {
   content: "HOME";
@@ -220,7 +236,6 @@ section {
 .controls .control:hover:nth-child(3)::after {
   content: "PORTFOLIO";
   opacity: 1;
-  margin-right: 0.8rem;
 }
 .controls .control:hover:nth-child(4)::after {
   content: "BLOG";
@@ -229,7 +244,6 @@ section {
 .controls .control:hover:nth-child(5)::after {
   content: "CONTACT";
   opacity: 1;
-  margin-right: 0.4rem;
 }
 
 .header-content {
@@ -255,11 +269,11 @@ section {
           clip-path: polygon(0 100%, 0 95%, 100% 100%);
 }
 .header-content .left-header .image {
-  border-radius: 25%;
-  height: 70%;
-  width: 65%;
+  border-radius: 2rem;
+  height: 75%;
+  width: 70%;
   margin-left: 6rem;
-  background-color: var(--color-black);
+  background-color: var(--color-grey-6);
   transition: all 0.4s ease-in-out;
 }
 .header-content .left-header .image img {
@@ -282,15 +296,15 @@ section {
 .header-content .right-header .welcome-text {
   font-size: 5rem;
   letter-spacing: 1px;
-  font-weight: 100;
+  font-weight: bold;
   margin-bottom: 2rem;
+  font-family: "Alegreya Sans", sans-serif;
 }
 .header-content .right-header .name {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
-  font-size: 1.5rem;
 }
 .header-content .right-header p {
   margin: 1rem 0;
@@ -324,8 +338,20 @@ section {
   border-radius: 50%;
   padding: 0.4rem;
 }
-.btn-ctn .main-btn:hover {
+.btn-ctn .main-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(-100%);
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.btn-ctn .main-btn:hover::before {
+  width: 100%;
+  height: 100%;
   background-color: var(--color-secondary);
+  transform: translateX(0);
 }
 .btn-ctn .contact-btn {
   border-radius: 30px;
@@ -350,8 +376,20 @@ section {
   border-radius: 50%;
   padding: 0.4rem;
 }
-.btn-ctn .contact-btn:hover {
+.btn-ctn .contact-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
+.btn-ctn .contact-btn:hover::before {
+  width: 100%;
+  height: 100%;
   background-color: var(--color-secondary);
+  transform: translateX(0);
 }
 
 .main-title {
@@ -361,8 +399,8 @@ section {
   position: relative;
   text-transform: uppercase;
   font-size: 3rem;
-  font-weight: 700;
-  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-family: "Alegreya Sans", sans-serif;
 }
 .main-title h2 span {
   color: var(--color-secondary);
@@ -394,12 +432,17 @@ section {
   margin-bottom: 1rem;
 }
 .about-container .main-about p a {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: bold;
+  transition: all 0.4s ease-in-out;
+}
+.about-container .main-about p a:hover {
   color: var(--color-secondary);
-  font-weight: 800;
 }
 .about-container .main-about .conect-ctn {
   color: var(--color-secondary);
-  font-family: "Crimson Text", serif;
+  font-family: "Lobster Two", cursive;
   font-size: 1.5rem;
-  font-weight: 500;
+  letter-spacing: 0.1rem;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
