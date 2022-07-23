@@ -303,9 +303,9 @@ section {
                 height: 100%;
                 object-fit: contain;
                 transition: all .4s ease-in-out;
-                filter: grayscale(100%);
+                filter: grayscale(50%);
                 &:hover {
-                    filter: grayscale(50%);
+                    filter: grayscale(0%);
                 }
             }
         }
@@ -568,7 +568,7 @@ section {
             height: 30rem;
             margin-top: .5rem;
             margin-left: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             overflow: hidden;
             img{
                 width: 100%;
@@ -588,15 +588,30 @@ section {
                 }
             }
             &:hover {
+                box-shadow: 2px 4px 10px rgba(0,0,0,.8);
                 img{
                     filter: grayscale(0);
                     transform: scale(1.1);
-                    box-shadow: 1px 4px 20px rgba(0,0,0,.8);
+                    
                 }
             }
         }
         .blog-text{
             margin-left: 1rem;
+            transition: all .4s ease-in-out;
+            h4{
+                font-size: 1.5rem;
+                margin-bottom: .7rem;
+                cursor: pointer;
+                transition: all .4s ease-in-out;
+                &:hover{
+                    color: var(--color-secondary);
+                }
+            }
+            p{
+                color: var(--color-grey-2);
+                line-height: 2rem;
+            }
         }
     }
 }
