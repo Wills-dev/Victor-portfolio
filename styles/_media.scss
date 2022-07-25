@@ -3,8 +3,6 @@
     .header{
         .header-content{
             .right-header{
-                padding-right: 5%;
-                padding-left: 10%;
                 .welcome-text{
                     font-size: 4rem;
                 }
@@ -76,13 +74,14 @@
     
     // HOME PAGE
     .header{
-        padding: 2rem 2.5rem;
+        padding: 0rem 2rem;
         width: 100%;
         .header-content{
             width: 100%;
             grid-template-columns: 1fr;
             padding-top: 6rem;
             .right-header {
+                padding-right: 20% !important;
                 grid-row: 1;
                 width: 100%;
                 margin: 0 auto;
@@ -91,20 +90,20 @@
             }
             
             .left-header{
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                margin-top: 3rem;
-                .h-shape{
-                    display: none;
-                }
-                .image{
-                    height: auto;
-                    width: 60%;
-                    margin-left: 0;
-                }
+                display: none;
+                // width: 100%;
+                // flex-direction: column;
+                // align-items: center;
+                // justify-content: center;
+                // margin-top: 3rem;
+                // .h-shape{
+                //     display: none;
+                // }
+                // .image{
+                //     height: auto;
+                //     width: 60%;
+                //     margin-left: 0;
+                // }
             }
         }
     }
@@ -197,12 +196,22 @@
     // end of general usage
 
     // home page
-    .header{
-        padding: 2rem 2rem;
-        .right-header{
-                padding: 0rem 1rem !important;
+    .header {
+        .header-content{
+            padding: 0rem 1rem;
+            .right-header{
+                    padding-left: 0rem;
+                    padding-right: 0 !important;
+                    .welcome-text{
+                        margin-bottom: .6rem;
+                    }
+                    .contact-btn{
+                        margin-left: .5rem !important;
+                    }
+            }
         }
     }
+    
     // end of home page
 
     // about page
@@ -263,40 +272,38 @@
     // end of general usage
 
     // home page
-    .header-content{
-        .right-header{
-            margin-bottom: 0;
-            padding-bottom: 0;
-            .welcome-text {
-                font-size: 3.5rem;
-            }
-            .name{
-                font-size: 1.4rem;
-            }
-            p{
-                font-size: .8rem;
-            }
-            .btn-ctn {
-                font-size: .6rem;
-            }
-        
-            .contact-btn{
-                .contact-text{
-                    padding: 0 .4rem !important;
+    .header{
+        .header-content{
+            padding: 0rem .5rem;
+            .right-header{
+                margin-bottom: 0;
+                padding-bottom: 0;
+                .welcome-text {
+                    font-size: 3rem;
+                }
+                .name{
+                    font-size: 1.2rem;
+                }
+                p{
+                    font-size: .8rem;
+                }
+                .btn-ctn {
+                    font-size: .6rem;
+                }
+            
+                .contact-btn{
+                    .contact-text{
+                        padding: 0 .4rem !important;
+                    }
+                }
+                .main-btn{
+                    .btn-text{
+                        padding: 0 .4rem !important;
+                    }
                 }
             }
-            .main-btn{
-                .btn-text{
-                    padding: 0 .4rem !important;
-                }
-            }
-        }
-        .left-header{
-            padding-top: 0;
-            margin-top: 0;
         }
     }
-    
     // end of home page
     // about page
    .about-container{

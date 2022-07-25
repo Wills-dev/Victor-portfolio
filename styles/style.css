@@ -491,7 +491,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
   padding: 0.4rem;
 }
 .btn-ctn .contact-btn::before {
@@ -825,10 +824,6 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
-  .header .header-content .right-header {
-    padding-right: 5%;
-    padding-left: 10%;
-  }
   .header .header-content .right-header .welcome-text {
     font-size: 4rem;
   }
@@ -878,7 +873,7 @@ section {
     font-size: 0.8rem;
   }
   .header {
-    padding: 2rem 2.5rem;
+    padding: 0rem 2rem;
     width: 100%;
   }
   .header .header-content {
@@ -887,6 +882,7 @@ section {
     padding-top: 6rem;
   }
   .header .header-content .right-header {
+    padding-right: 20% !important;
     grid-row: 1;
     width: 100%;
     margin: 0 auto;
@@ -894,20 +890,7 @@ section {
     padding-top: 1rem;
   }
   .header .header-content .left-header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 3rem;
-  }
-  .header .header-content .left-header .h-shape {
     display: none;
-  }
-  .header .header-content .left-header .image {
-    height: auto;
-    width: 60%;
-    margin-left: 0;
   }
   .contact-content-ctn {
     margin: 0 8rem;
@@ -974,11 +957,18 @@ section {
   .bg-text {
     font-size: 2rem !important;
   }
-  .header {
-    padding: 2rem 2rem;
+  .header .header-content {
+    padding: 0rem 1rem;
   }
-  .header .right-header {
-    padding: 0rem 1rem !important;
+  .header .header-content .right-header {
+    padding-left: 0rem;
+    padding-right: 0 !important;
+  }
+  .header .header-content .right-header .welcome-text {
+    margin-bottom: 0.6rem;
+  }
+  .header .header-content .right-header .contact-btn {
+    margin-left: 0.5rem !important;
   }
   .about-container .main-about p {
     font-size: 1rem;
@@ -1017,31 +1007,30 @@ section {
   .bg-text {
     font-size: 2rem !important;
   }
-  .header-content .right-header {
+  .header .header-content {
+    padding: 0rem 0.5rem;
+  }
+  .header .header-content .right-header {
     margin-bottom: 0;
     padding-bottom: 0;
   }
-  .header-content .right-header .welcome-text {
-    font-size: 3.5rem;
+  .header .header-content .right-header .welcome-text {
+    font-size: 3rem;
   }
-  .header-content .right-header .name {
-    font-size: 1.4rem;
+  .header .header-content .right-header .name {
+    font-size: 1.2rem;
   }
-  .header-content .right-header p {
+  .header .header-content .right-header p {
     font-size: 0.8rem;
   }
-  .header-content .right-header .btn-ctn {
+  .header .header-content .right-header .btn-ctn {
     font-size: 0.6rem;
   }
-  .header-content .right-header .contact-btn .contact-text {
+  .header .header-content .right-header .contact-btn .contact-text {
     padding: 0 0.4rem !important;
   }
-  .header-content .right-header .main-btn .btn-text {
+  .header .header-content .right-header .main-btn .btn-text {
     padding: 0 0.4rem !important;
-  }
-  .header-content .left-header {
-    padding-top: 0;
-    margin-top: 0;
   }
   .about-container .main-about p {
     font-size: 0.8rem;
