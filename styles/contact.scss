@@ -1,7 +1,34 @@
 .container{
-    margin-left: 6rem;
+    margin-left: 6%;
     margin-top: 5%;
+    font-size: 1rem;
     p {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
+}
+
+.return-btn{
+    display: block;
+    align-items: center;
+    text-align: center;
+    width: 8rem;
+    margin-left: 6%;
+    border-radius: 2rem;
+    border: .1rem solid #307649;
+    margin-top: 5rem;
+    padding: .2rem;
+    transition: all .4s ease-in-out;
+    box-shadow: .1rem .3rem 1rem rgba(0,0,0,.4);
+    a{
+        text-decoration: none;
+        color: rgb(59, 56, 53);
+    }
+    &:hover{
+        background-color: rgb(35, 47, 21);
+        transform: translateY(.2rem);
+        a{
+            color: rgb(237, 230, 221) ;
+        }
+    }
+
 }
