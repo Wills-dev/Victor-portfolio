@@ -306,7 +306,7 @@ section {
   position: fixed;
   top: 10%;
   right: 3%;
-  width: 50%;
+  width: 80%;
   height: 60%;
   background-color: rgba(33, 40, 47, 0.9);
   z-index: 21;
@@ -825,15 +825,19 @@ section {
 }
 
 @media screen and (max-width: 1280px) {
-  .left-header .image {
-    height: 50% !important;
-    width: 60% !important;
+  .header .header-content .right-header {
+    padding-right: 5%;
+    padding-left: 10%;
   }
-  .right-header .welcome-text {
-    font-size: 4rem !important;
+  .header .header-content .right-header .welcome-text {
+    font-size: 4rem;
   }
-  .right-header .name {
-    font-size: 1.6rem !important;
+  .header .header-content .right-header .name {
+    font-size: 1.6rem;
+  }
+  .header .header-content .left-header .image {
+    height: 50%;
+    width: 60%;
   }
   .portfolios {
     grid-template-columns: repeat(2, 1fr);
@@ -847,13 +851,13 @@ section {
     margin: 0 auto;
     width: 100%;
   }
-  .your-details {
+  .contact-content-ctn .right-contact .your-details {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .your-details :last-child {
-    margin-left: 0 !important;
+  .contact-content-ctn .right-contact .your-details :last-child {
+    margin-left: 0;
     margin-top: 1.5rem;
   }
 }
@@ -866,6 +870,12 @@ section {
   }
   .nav-bar {
     display: flex;
+  }
+  section {
+    padding: 2rem 6rem !important;
+  }
+  .btn-ctn {
+    font-size: 0.8rem;
   }
   .header {
     padding: 2rem 2.5rem;
@@ -881,7 +891,7 @@ section {
     width: 100%;
     margin: 0 auto;
     padding-right: 0;
-    padding-top: 1rem !important;
+    padding-top: 1rem;
   }
   .header .header-content .left-header {
     width: 100%;
@@ -889,20 +899,18 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 3rem;
   }
   .header .header-content .left-header .h-shape {
     display: none;
   }
   .header .header-content .left-header .image {
-    height: 100% !important;
-    width: 100%;
+    height: auto;
+    width: 60%;
     margin-left: 0;
   }
-  section {
-    padding: 2rem 6rem !important;
-  }
-  .main-btn, .btn-ctn {
-    font-size: 0.8rem;
+  .contact-content-ctn {
+    margin: 0 8rem;
   }
 }
 @media screen and (max-width: 950px) {
@@ -910,7 +918,21 @@ section {
     padding-bottom: 6rem;
   }
   .bloggs .blog .img-ctn {
-    width: 90%;
+    height: 25rem;
+    width: 80%;
+  }
+  .bloggs .blog .img-ctn .date {
+    font-size: 0.6rem;
+  }
+  .bloggs .blog .blog-text h4 {
+    font-size: 1.2rem;
+  }
+  .bloggs .blog .blog-text p {
+    font-size: 0.8rem;
+    margin-right: 2rem;
+  }
+  .contact-content-ctn {
+    margin: 0 2rem;
   }
 }
 @media screen and (max-width: 600px) {
@@ -922,8 +944,8 @@ section {
   header {
     padding: 0;
   }
-  .right-header {
-    padding: 2rem !important;
+  section {
+    padding: 2rem 2rem !important;
   }
   .theme-btn {
     width: 2rem;
@@ -943,15 +965,26 @@ section {
     justify-items: center;
     flex-wrap: wrap;
   }
+  .main-title {
+    margin-top: 2rem;
+  }
   .main-title h2 {
     font-size: 2rem;
   }
+  .bg-text {
+    font-size: 2rem !important;
+  }
+  .header {
+    padding: 2rem 2rem;
+  }
+  .header .right-header {
+    padding: 2rem 1rem !important;
+  }
   .about-container .main-about p {
-    text-align: center;
     font-size: 1rem;
   }
-  .bg-text {
-    font-size: 3rem !important;
+  .about-container .main-about .conect-ctn {
+    font-size: 1.2rem;
   }
   .portfolios {
     grid-template-columns: 1fr;
@@ -959,5 +992,79 @@ section {
   }
   .portfolios .portfolio-item {
     margin: 0 auto;
+  }
+  .portfolios .portfolio-item img {
+    height: 15rem;
+  }
+  .bloggs .blog .img-ctn {
+    height: 20rem;
+  }
+  .bloggs .blog .img-ctn img {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .contact-content-ctn {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-title {
+    margin-top: 2rem;
+  }
+  .main-title h2 {
+    font-size: 1.8rem;
+  }
+  .bg-text {
+    font-size: 2rem !important;
+  }
+  .right-header .welcome-text {
+    font-size: 3.5rem !important;
+  }
+  .right-header .name {
+    font-size: 1.4rem !important;
+  }
+  .right-header p {
+    font-size: 0.8rem !important;
+  }
+  .right-header .btn-ctn {
+    font-size: 0.6rem;
+  }
+  .right-header .contact-btn .contact-text {
+    padding: 0 0.4rem !important;
+  }
+  .right-header .main-btn .btn-text {
+    padding: 0 0.4rem !important;
+  }
+  .about-container .main-about p {
+    font-size: 0.8rem;
+  }
+  .about-container .main-about .conect-ctn {
+    font-size: 1rem;
+  }
+  .bloggs .blog .img-ctn {
+    height: 15rem;
+  }
+  .bloggs .blog .blog-text h4 {
+    font-size: 1rem;
+  }
+  .contact-content-ctn .left-contact h4 {
+    font-size: 1rem;
+  }
+  .contact-content-ctn .left-contact .contact-info {
+    font-size: 0.8rem;
+  }
+  .contact-content-ctn .right-contact .input-control {
+    margin: 1rem 0;
+  }
+  .contact-content-ctn .right-contact .input-control input, .contact-content-ctn .right-contact .input-control textarea {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.8rem;
+  }
+  .contact-content-ctn .right-contact .your-details :last-child {
+    margin-top: 1rem;
+  }
+  .contact-content-ctn .right-contact .submit-btn {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
   }
 }/*# sourceMappingURL=style.css.map */
