@@ -978,7 +978,7 @@ section {
     padding: 2rem 2rem;
   }
   .header .right-header {
-    padding: 2rem 1rem !important;
+    padding: 0rem 1rem !important;
   }
   .about-container .main-about p {
     font-size: 1rem;
@@ -1017,23 +1017,31 @@ section {
   .bg-text {
     font-size: 2rem !important;
   }
-  .right-header .welcome-text {
-    font-size: 3.5rem !important;
+  .header-content .right-header {
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
-  .right-header .name {
-    font-size: 1.4rem !important;
+  .header-content .right-header .welcome-text {
+    font-size: 3.5rem;
   }
-  .right-header p {
-    font-size: 0.8rem !important;
+  .header-content .right-header .name {
+    font-size: 1.4rem;
   }
-  .right-header .btn-ctn {
+  .header-content .right-header p {
+    font-size: 0.8rem;
+  }
+  .header-content .right-header .btn-ctn {
     font-size: 0.6rem;
   }
-  .right-header .contact-btn .contact-text {
+  .header-content .right-header .contact-btn .contact-text {
     padding: 0 0.4rem !important;
   }
-  .right-header .main-btn .btn-text {
+  .header-content .right-header .main-btn .btn-text {
     padding: 0 0.4rem !important;
+  }
+  .header-content .left-header {
+    padding-top: 0;
+    margin-top: 0;
   }
   .about-container .main-about p {
     font-size: 0.8rem;

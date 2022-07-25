@@ -200,7 +200,7 @@
     .header{
         padding: 2rem 2rem;
         .right-header{
-                padding: 2rem 1rem !important;
+                padding: 0rem 1rem !important;
         }
     }
     // end of home page
@@ -263,31 +263,40 @@
     // end of general usage
 
     // home page
-    .right-header{
-        .welcome-text {
-            font-size: 3.5rem !important;
-        }
-        .name{
-            font-size: 1.4rem !important;
-        }
-        p{
-            font-size: .8rem !important;
-        }
-        .btn-ctn {
-            font-size: .6rem;
-        }
-    
-        .contact-btn{
-            .contact-text{
-                padding: 0 .4rem !important;
+    .header-content{
+        .right-header{
+            margin-bottom: 0;
+            padding-bottom: 0;
+            .welcome-text {
+                font-size: 3.5rem;
+            }
+            .name{
+                font-size: 1.4rem;
+            }
+            p{
+                font-size: .8rem;
+            }
+            .btn-ctn {
+                font-size: .6rem;
+            }
+        
+            .contact-btn{
+                .contact-text{
+                    padding: 0 .4rem !important;
+                }
+            }
+            .main-btn{
+                .btn-text{
+                    padding: 0 .4rem !important;
+                }
             }
         }
-        .main-btn{
-            .btn-text{
-                padding: 0 .4rem !important;
-            }
+        .left-header{
+            padding-top: 0;
+            margin-top: 0;
         }
     }
+    
     // end of home page
     // about page
    .about-container{
