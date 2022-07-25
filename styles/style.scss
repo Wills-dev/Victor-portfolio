@@ -543,7 +543,7 @@ section {
     }
 }
 
-.mainn-btn{
+.main-btn{
     border-radius: 30px;
     color: inherit;
     font-weight: 600;
@@ -711,7 +711,7 @@ section {
 // blog start
 .bloggs{
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     row-gap: 2rem;
     margin-top: 3rem;
   .blog{
@@ -833,10 +833,19 @@ section {
             }
         }
         .submit-btn{
-            display: flex;
-            justify-content: flex-start;
+            transition: all .4s ease-in-out;
+            outline: none;
+            border: .1rem solid var(--color-grey-3);
+            border-radius: 2rem;
+            padding: .4rem 1rem;
+            font-family: inherit;
+            font-weight: bold;
             span{
-                padding: .3rem 1rem;
+                text-align: center;
+            }
+            &:hover{
+                background-color: var(--color-grey-2);
+                color: var(--color-grey-5);
             }
         }
     }

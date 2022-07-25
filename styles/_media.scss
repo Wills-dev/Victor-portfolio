@@ -1,23 +1,46 @@
-@media screen and (max-width: 600px){
-    .logo-ctn{
-        font-size: 1.8rem;
-        padding-left: 0 !important;
-        left: 1%;
+@media screen and (max-width: 1280px){
+
+    .left-header{
+        .image{
+            height: 50% !important;
+            width: 60% !important;
+        }
     }
-    header{
-        padding: 0;
+
+    .right-header{
+        .welcome-text{
+            font-size: 4rem !important;
+        }
+        .name{
+            font-size: 1.6rem !important;
+        }
     }
-    header .right-header{
-        padding: 2rem !important;
+
+    .portfolios{
+        grid-template-columns: repeat(2, 1fr);
     }
-    section{
-        padding: 3rem 2rem !important;
+    .contact-content-ctn{
+        flex-direction: column-reverse;
+        padding-bottom: 6rem;
+        .right-contact{
+            padding-bottom: 3rem;
+            margin: 0 auto;
+            width: 100%;
+        }
     }
-    .theme-btn{
-        width: 2rem;
-        height: 2rem;
-        border-radius: 50%;
+    .your-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        :last-child{
+            margin-left: 0 !important;
+            margin-top: 1.5rem ;
+        }
     }
+}
+
+@media screen and (max-width: 1145px){
+
     .controls{
         display: none;
     }
@@ -28,6 +51,81 @@
     .nav-bar {
         display: flex;
     }
+
+    .header{
+        padding: 2rem 2.5rem;
+        width: 100%;
+        .header-content{
+            width: 100%;
+            grid-template-columns: 1fr;
+            padding-top: 6rem;
+            .right-header {
+                grid-row: 1;
+                width: 100%;
+                margin: 0 auto;
+                padding-right: 0;
+                padding-top: 1rem !important;
+            }
+            
+            .left-header{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .h-shape{
+                    display: none;
+                }
+                .image{
+                    height: 100% !important;
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
+    section{
+        padding: 2rem 6rem !important;
+    }
+
+    .main-btn, .btn-ctn {
+        font-size: .8rem;
+    }
+
+}
+
+@media screen and (max-width: 950px){
+
+    .bloggs{
+        padding-bottom: 6rem;
+        .blog{
+            .img-ctn{
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+    .logo-ctn{
+        font-size: 1.8rem;
+        padding-left: 0 !important;
+        left: 1%;
+    }
+    header{
+        padding: 0;
+    }
+    .right-header{
+        padding: 2rem !important;
+    }
+    
+    .theme-btn{
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+    
     
     .sides{
         .social-ctn{
@@ -47,26 +145,7 @@
         }
         
     }
-    .header-content{
-        grid-template-columns: 1fr;
-        padding-top: 6rem;
-    }
-    .right-header {
-        grid-row: 1;
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .left-header{
-        height: 30rem;
-        .h-shape{
-            display: none;
-        }
-    }
-    .header-content, .left-header, .image{
-        margin: 0 auto !important;
-        width: 90%;
-    }
+
     .main-title{
         h2{
             font-size: 2rem;
@@ -87,7 +166,12 @@
     }
     .portfolios{
         grid-template-columns: 1fr;
-        width: 80%;
+        padding-bottom: 6rem;
+        .portfolio-item{
+            margin: 0 auto;
+        }
     }
+
+    
 
 }
