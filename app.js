@@ -55,6 +55,13 @@ function PageTransition(){
             currentSectn[0].className = currentSectn[0].className.replace('active', '');
             sections[i].className += ' active';
 
+            // return the display to default
+            let element = document.querySelector('.menu-icon');
+            element.classList.toggle('display');
+
+            let activated = document.querySelector('.side-bar');
+            activated.classList.toggle('activated');
+
             
         })
     }
