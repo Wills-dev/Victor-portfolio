@@ -8,7 +8,7 @@
 
 :root {
     --color-primary: #bac0d3;
-    --color-secondary: #106864;
+    --color-secondary: #61636b;
     --color-tietary: #c9f1ee;
     --color-white: #000;
     --color-black: #fff;
@@ -20,9 +20,12 @@
     --color-grey-5: #b2becd;
     --color-grey-6: #dbe1e8;
     --color-mine: #d8d2d2;
+    --color-mine-2: #007679;
     --image-background: rgba(74, 76, 78, 0.1);
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
     --box-shadow-2: 0 5px 15px rgba(0,0,0,.6);
+    --background-color:#DEF2EF;
+    --sidebar-background:rgba(142, 145, 147, 0.9);
     // font-family: 'Crimson Text', serif;
     // font-family: 'Pacifico', cursive;
     // font-family: 'Poppins', sans-serif;
@@ -33,10 +36,10 @@
 
 .light-mode{
     --color-primary: #191d2b;
-    --color-secondary: #106864;
+    --color-secondary: #b5c0e3;
     --color-tietary: #033a36;
     --color-white: #fff;
-    --color-black: #000;
+    --color-black: #141d26;
     --color-grey-0: #f8f8f8;
     --color-grey-1: #dbe1e8;
     --color-grey-2: #b2becd;
@@ -45,14 +48,17 @@
     --color-grey-5: #2a2e35;
     --color-grey-6: #12181b;
     --color-mine: #d8d2d2;
+    --color-mine-2: #2EA682;
     --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
     --box-shadow-2: 0 5px 15px rgba(0,0,0,.6);
     --image-background: rgba(72, 80, 87, 0.3);
+    --background-color:#333A49;
+    --sidebar-background:rgba(33, 40, 47, 0.9);
     
 }
 
 body{
-    background-color: var(--color-secondary);
+    background-color: var(--background-color);
     font-family: 'Montserrat', sans-serif;
     font-size: 1.1rem;
     color: var(--color-grey-2);
@@ -212,7 +218,7 @@ section {
         background-color: var(--color-secondary) !important;
         transition: all .4s ease-in-out;
         i{
-            color: var(--color-white) !important;
+            color: var(--color-black) !important;
         }
     }
    
@@ -240,7 +246,7 @@ section {
             font-family: 'Alegreya Sans', sans-serif;
             font-weight: bold;
             letter-spacing: .1rem;
-            color: #08b0a8;
+            color: var(--color-secondary);
             position: absolute;
             bottom: 50%;
             transform: translateY(50%);
@@ -330,7 +336,7 @@ section {
     right: 3%;
     width: 80%;
     height: 60%;
-    background-color: rgba(33, 40, 47, 0.9);
+    background-color: var(--sidebar-background);
     z-index: 21;
     .active-section{
         color: var(--color-secondary) !important;
@@ -348,7 +354,7 @@ section {
             letter-spacing: .1rem;
             text-transform: uppercase;
             position: relative;
-            color: var(--color-mine);
+            color:var(--color-mine-2) ;
             cursor: pointer;
             transition: all .4s ease-in-out;
             &::after {
@@ -487,7 +493,7 @@ section {
         .name{
             font-size: 2rem;
             span{
-                color: var(--color-secondary);
+                color: var(--color-mine-2);
             }
             animation: wills 2s 3s backwards;
         }
@@ -515,7 +521,6 @@ section {
     animation: wills 2s 4s backwards;
     .contact-btn{
         border-radius: 30px;
-        color: inherit;
         font-weight: 600;
         position: relative;
         border: .1rem solid var(--color-secondary);
@@ -545,10 +550,11 @@ section {
             transition: all .4s ease-in-out;
         }
         &:hover {
+            color: var(--color-grey-5);
             &::before{
                 width: 100%;
                 height: 100%;
-                background-color: var(--color-secondary);
+                background-color: var(--color-grey-2);
                 transform: translateX(0);
             }
         }
@@ -557,7 +563,6 @@ section {
 
 .main-btn{
     border-radius: 30px;
-    color: inherit;
     font-weight: 600;
     position: relative;
     border: .1rem solid var(--color-secondary);
@@ -587,10 +592,11 @@ section {
         transition: all .4s ease-in-out;
     }
     &:hover {
+        color: var(--color-grey-5);
         &::before{
             width: 100%;
             height: 100%;
-            background-color: var(--color-secondary);
+            background-color: var(--color-grey-2);
             transform: translateX(0);
         }
     }
@@ -641,6 +647,9 @@ section {
             font-size: 1.5rem;
             letter-spacing: .1rem;
             font-weight: bold;
+            &:hover{
+                color: var(--color-mine-2);
+            }
         }
    }
 }
