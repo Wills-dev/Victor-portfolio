@@ -72,15 +72,14 @@ a {
     font-weight:100 ;
     text-transform: capitalize;
     font-style: italic;
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
     color: var(--color-secondary);
-    top: 2%;
-    padding-left: 2rem;
-    position: fixed;
+    padding: .5rem 3rem;
     z-index: 10;
-    opacity: .7;
+    position: fixed;
     cursor: pointer;
+   
 }
 // logo end
 // social navigation starts
@@ -296,11 +295,12 @@ section {
 .nav-bar{
     display: none;
     position: relative;
+    z-index: 15;
     .menu-icon{
         display: flex;
         position:fixed;
         flex-direction: column;
-        top: 2%;
+        top: .2rem;
         right: 3%;
         height: 2rem;
         width: 1.8rem;
@@ -482,17 +482,29 @@ section {
             font-weight: bold;
             margin-bottom: 2rem;
             font-family: 'Alegreya Sans', sans-serif;
+            animation: wills 2s 2s backwards;
         }
         .name{
             font-size: 2rem;
             span{
                 color: var(--color-secondary);
             }
+            animation: wills 2s 3s backwards;
         }
         p {
             margin: 1rem 0;
             line-height: 2rem;
             font-size: 1rem;
+            animation: wills 2s 3s backwards;
+        }
+        @keyframes wills {
+            0% {
+                opacity: 0;
+            }
+        
+            100% {
+                opacity: 1;
+            }
         }
         
     }
@@ -500,6 +512,7 @@ section {
 .btn-ctn {
     display: flex;
     justify-content: flex-start;
+    animation: wills 2s 4s backwards;
     .contact-btn{
         border-radius: 30px;
         color: inherit;
@@ -605,7 +618,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 2.5rem;
+    padding-top: 2rem;
     padding-bottom: 2rem;
     border-bottom: .8px solid var(--color-grey-5);
     position: relative;

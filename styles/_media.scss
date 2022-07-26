@@ -63,8 +63,18 @@
     // END OF DISPLAY
 
     // GENERAL
+    .logo-ctn{
+        width: 100%;
+        background-color: var(--color-black);
+        box-shadow: 0 .2rem .6rem rgba(0,0,0,.4);
+        a{
+            font-size: 1.5rem;
+            opacity: .8;
+        }
+    }
     section{
-        padding: 2rem 6rem !important;
+        padding: 4rem 6rem !important;
+        margin-bottom: 0;
     }
 
     .btn-ctn {
@@ -152,7 +162,6 @@
     .logo-ctn{
         font-size: 1.8rem;
         padding-left: 0 !important;
-        left: 1%;
     }
     header{
         padding: 0;

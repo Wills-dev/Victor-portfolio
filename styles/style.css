@@ -64,14 +64,12 @@ a {
   font-weight: 100;
   text-transform: capitalize;
   font-style: italic;
-  font-size: 2.5rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   color: var(--color-secondary);
-  top: 2%;
-  padding-left: 2rem;
-  position: fixed;
+  padding: 0.5rem 3rem;
   z-index: 10;
-  opacity: 0.7;
+  position: fixed;
   cursor: pointer;
 }
 
@@ -273,12 +271,13 @@ section {
 .nav-bar {
   display: none;
   position: relative;
+  z-index: 15;
 }
 .nav-bar .menu-icon {
   display: flex;
   position: fixed;
   flex-direction: column;
-  top: 2%;
+  top: 0.2rem;
   right: 3%;
   height: 2rem;
   width: 1.8rem;
@@ -454,9 +453,13 @@ section {
   font-weight: bold;
   margin-bottom: 2rem;
   font-family: "Alegreya Sans", sans-serif;
+  -webkit-animation: wills 2s 2s backwards;
+          animation: wills 2s 2s backwards;
 }
 .header-content .right-header .name {
   font-size: 2rem;
+  -webkit-animation: wills 2s 3s backwards;
+          animation: wills 2s 3s backwards;
 }
 .header-content .right-header .name span {
   color: var(--color-secondary);
@@ -465,11 +468,31 @@ section {
   margin: 1rem 0;
   line-height: 2rem;
   font-size: 1rem;
+  -webkit-animation: wills 2s 3s backwards;
+          animation: wills 2s 3s backwards;
+}
+@-webkit-keyframes wills {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes wills {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .btn-ctn {
   display: flex;
   justify-content: flex-start;
+  -webkit-animation: wills 2s 4s backwards;
+          animation: wills 2s 4s backwards;
 }
 .btn-ctn .contact-btn {
   border-radius: 30px;
@@ -566,7 +589,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
   padding-bottom: 2rem;
   border-bottom: 0.8px solid var(--color-grey-5);
   position: relative;
@@ -866,8 +889,18 @@ section {
   .nav-bar {
     display: flex;
   }
+  .logo-ctn {
+    width: 100%;
+    background-color: var(--color-black);
+    box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.4);
+  }
+  .logo-ctn a {
+    font-size: 1.5rem;
+    opacity: 0.8;
+  }
   section {
-    padding: 2rem 6rem !important;
+    padding: 4rem 6rem !important;
+    margin-bottom: 0;
   }
   .btn-ctn {
     font-size: 0.8rem;
@@ -922,7 +955,6 @@ section {
   .logo-ctn {
     font-size: 1.8rem;
     padding-left: 0 !important;
-    left: 1%;
   }
   header {
     padding: 0;
