@@ -24,7 +24,7 @@
   --box-shadow-1: 0 3px 15px rgba(0,0,0,.2);
   --box-shadow-2: 0 5px 15px rgba(0,0,0,.6);
   --background-color:#DEF2EF;
-  --sidebar-background:rgba(142, 145, 147, 0.9);
+  --sidebar-background:rgba(142, 145, 147, 1);
 }
 
 .light-mode {
@@ -46,7 +46,7 @@
   --box-shadow-2: 0 5px 15px rgba(0,0,0,.6);
   --image-background: rgba(72, 80, 87, 0.3);
   --background-color:#333A49;
-  --sidebar-background:rgba(33, 40, 47, 0.9);
+  --sidebar-background:rgba(33, 40, 47, 1);
 }
 
 body {
