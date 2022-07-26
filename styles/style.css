@@ -932,7 +932,7 @@ section {
     background-image: url(../images/Patt.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     position: absolute;
     top: 0px;
     right: 0px;
