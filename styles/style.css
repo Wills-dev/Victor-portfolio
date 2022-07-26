@@ -7,7 +7,7 @@
 
 :root {
   --color-primary: #bac0d3;
-  --color-secondary: #5A586D;
+  --color-secondary: #5b5974;
   --color-tietary: #c9f1ee;
   --color-white: #000;
   --color-black: #fff;
@@ -927,6 +927,20 @@ section {
     grid-template-columns: 1fr;
     padding-top: 6rem;
   }
+  .header .header-content::before {
+    content: "";
+    background-image: url(../images/Patt.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+    filter: grayscale(10%);
+  }
   .header .header-content .right-header {
     padding-right: 20% !important;
     grid-row: 1;
@@ -934,6 +948,9 @@ section {
     margin: 0 auto;
     padding-right: 0;
     padding-top: 1rem;
+  }
+  .header .header-content .right-header p {
+    font-weight: 700;
   }
   .header .header-content .left-header {
     display: none;

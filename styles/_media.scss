@@ -90,6 +90,20 @@
             width: 100%;
             grid-template-columns: 1fr;
             padding-top: 6rem;
+            &::before{
+                content:'';
+                background-image: url(../images/Patt.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: .1;
+                filter: grayscale(10%);
+            }
             .right-header {
                 padding-right: 20% !important;
                 grid-row: 1;
@@ -97,6 +111,9 @@
                 margin: 0 auto;
                 padding-right: 0;
                 padding-top: 1rem;
+                p{
+                    font-weight: 700;
+                }
             }
             
             .left-header{
