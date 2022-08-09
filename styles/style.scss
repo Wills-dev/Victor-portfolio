@@ -901,5 +901,23 @@ section {
 }
 // theme ends here
 
+// for maintenance
+.maintenance-container {
+    margin-top: 3rem;
+    .maintenance-header{
+        text-align: center;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin-bottom: 5rem;
+    }
+    .maintenance-content{
+        text-align: left;
+        h2{
+            margin-bottom: 2rem;
+        }
+    }
+
+}
+
 // media query
 @import './media';

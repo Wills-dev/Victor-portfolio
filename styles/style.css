@@ -859,6 +859,22 @@ section {
   color: var(--color-grey-1);
 }
 
+.maintenance-container {
+  margin-top: 3rem;
+}
+.maintenance-container .maintenance-header {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  margin-bottom: 5rem;
+}
+.maintenance-container .maintenance-content {
+  text-align: left;
+}
+.maintenance-container .maintenance-content h2 {
+  margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 1280px) {
   .header .header-content .right-header .welcome-text {
     font-size: 4rem;
